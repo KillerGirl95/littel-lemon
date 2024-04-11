@@ -70,7 +70,7 @@ canvas.addEventListener('click', (event) => {
         && event.offsetY <= bugY + bugHeight) 
     {
         score++;
-        hoppingInterval -= 75; // Adjust difficulty by reducing hopping interval
+        hoppingInterval -= 75; // adjust difficulty by reducing hopping interval
         resetInterval();
         hopBug();
     
