@@ -20,7 +20,6 @@ function drawBug() {
   ctx.drawImage(bugImage, bugX, bugY, bugWidth, bugHeight);
 }
 
-// clear the canvas, update score display
 function clearAndDraw() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
   drawBug();
@@ -70,7 +69,7 @@ canvas.addEventListener('click', (event) => {
         && event.offsetY <= bugY + bugHeight) 
     {
         score++;
-        hoppingInterval -= 75; // adjust difficulty by reducing hopping interval
+        hoppingInterval -= 75; 
         resetInterval();
         hopBug();
     
